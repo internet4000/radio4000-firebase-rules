@@ -1,0 +1,22 @@
+{
+  "name": "radio4000-firebase-rules",
+  "homepage": "https://github.com/internet4000/radio4000-firebase-rules",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": "10"
+  },
+  "scripts": {
+    "firebase-login": "firebase login",
+    "deploy-api": "firebase use staging; firebase deploy --only functions",
+    "deploy-api-production": "firebase use production; firebase deploy --only functions",
+    "deploy-api-prod": "firebase use prod; firebase deploy --only functions",
+    "deploy-rules": "firebase use staging; firebase deploy --only database",
+    "deploy-rules-production": "firebase use production; firebase deploy --only database",
+    "deploy-rules-prod": "firebase use prod; firebase deploy --only database"
+  },
+  "devDependencies": {
+    "firebase-tools": "^8.10.0"
+  }
+}
